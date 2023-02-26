@@ -8,7 +8,7 @@ module "output_parameters" {
 
   parameter_write = [
     {
-      name = "elbokade/backend-state/s3_bucket_name"
+      name = "/elbokade/backend-state/s3_bucket_name"
       value = module.tfstate_backend.s3_bucket_id
       type = "String"
       overwrite = true
