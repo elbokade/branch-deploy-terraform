@@ -13,5 +13,11 @@ module "output_parameters" {
       type = "String"
       overwrite = true
     },
+    {
+      name = "/elbokade/backend-state/dynamodb_table_name"
+      value = module.tfstate_backend.dynamodb_table_name
+      type = "String"
+      overwrite = true
+    },
   ]
 }
